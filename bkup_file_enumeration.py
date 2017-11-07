@@ -155,10 +155,13 @@ class BackupEnumerator:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", help="Name of the file which contains a list of valid web pages, separated by newlines.")
-    parser.add_argument("-c", help="Cookie value. NOT TESTED YET!!!!!", nargs='?', default=None)
+    parser.add_argument("-c", help="Cookie value. Not tested yet.", nargs='?', default=None)
     args = parser.parse_args()
     if args.c is not None:
         print("WARNING. I haven't tested whether cookies work correctly yet! The functionality has been implemented though, so disable this if you want to try anyway.")
     else:
-        bkenum = BackupEnumerator(args.f, args.c)
-        bkenum.enumerate()
+        if args.f is None:
+            print("Invalid input. Try -h.")
+        else:
+            bkenum = BackupEnumerator(args.f, args.c)
+            bkenum.enumerate()
