@@ -8,4 +8,4 @@ Enumerates web files to see if any backup versions of them have been left behind
   -c          Optional cookie value. Not tested.  
   
 Example:  
-python bkup_file_enumeration.py -f <name_of_file> -c <optional cookie parameter>  
+python bkup_file_enumeration.py -f <name_of_file> -c <optional cookie parameter>   
