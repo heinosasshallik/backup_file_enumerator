@@ -1,2 +1,2 @@
-http://thatsthefinger.com/
-https://docs.python.org/3/tutorial/errors.html
+http://somewebsite.com/
+https://subdomain.somewebsite.org/3/directory/page.fileextension
