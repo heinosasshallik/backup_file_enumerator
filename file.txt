@@ -1,2 +1,2 @@
 http://somewebsite.com/
-https://subdomain.somewebsite.org/3/directory/page.fileextension
+https://subdomain.somewebsite.org/3/directory/page.php
