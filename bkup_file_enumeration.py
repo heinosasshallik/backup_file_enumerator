@@ -21,7 +21,7 @@ class BackupEnumerator:
     def __init__(self, input_file_name, cookie):
         """Constructor."""
         self.file_extensions_all_possibilities = ["bak", "txt", "src", "dev", "old", "inc", "orig", "copy", "cpy", "tmp", "bkup", "backup", ""]
-        self.file_extensions_only_last = [".zip", ".tar", ".gz", ".tar.gz", "~"]
+        self.file_extensions_only_last = [".zip", ".tar", ".gz", ".tar.gz", "~", ".swp"]
         self.file_extensions_only_first = ["Copy of "]
 
         self.input_file_name = input_file_name
